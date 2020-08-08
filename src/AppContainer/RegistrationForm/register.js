@@ -1,6 +1,6 @@
 import React from 'react';
 import { Form, Input, InputNumber, Button ,Radio,Select} from 'antd';
-
+import {withRouter} from 'react-router-dom';
 const layout = {
   labelCol: {
     span: 8,
@@ -82,4 +82,4 @@ var RegisterForm = (props) => {
   );
 };
 
-export default RegisterForm;
+export default withRouter(RegisterForm);

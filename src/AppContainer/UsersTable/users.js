@@ -1,6 +1,8 @@
 import React from 'react';
 import { Table, Tag, Select,Input} from 'antd';
 import './users.css'
+import {withRouter} from 'react-router-dom';
+
 class Users extends React.Component{
     state = {
         searchText :'',
@@ -90,4 +92,4 @@ class Users extends React.Component{
     }
 }
 
-export default Users;
+export default withRouter(Users);
